@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:micro="sap.suite.ui.microchart"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<FlexBox height="70px" width="70px">
+		<layoutData>
+			<FlexItemData maxHeight="70px"/>
+		</layoutData>
+		<micro:RadialMicroChart percentage="{ path: 'OverallPrice', formatter: '.formatter.calculatePercentage' }" app:name="radial" press="press"
+			valueColor="{ path: 'OverallPrice', formatter: '.formatter.calculateCriticality' }"/>
+	</FlexBox>
+</core:FragmentDefinition>

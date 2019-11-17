@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script id="sap-ui-bootstrap" 
+         src="../../resources/sap-ui-core.js"
+         data-sap-ui-theme="sap_belize"
+         data-sap-ui-noConflict="true"
+         data-sap-ui-resourceroots='{
+         "fiori.manage.purchase.documents.purchasedocumentslrp": "../../",
+         "test.unit": "./"
+         }'></script>
+      <script language="javascript">
+         jQuery.sap.require("sap.ui.qunit.qunit-css");
+         jQuery.sap.require("sap.ui.thirdparty.qunit");
+         jQuery.sap.require("sap.ui.qunit.qunit-junit");
+         jQuery.sap.require("sap.ui.qunit.qunit-coverage");
+         sap.ui.require(
+         	["test/unit/model/formatter"]
+         );
+      </script>
+   </head>
+   <body>
+      <div id="qunit"></div>
+   </body>
+</html>
